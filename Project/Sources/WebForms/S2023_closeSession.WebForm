@@ -1,0 +1,145 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"height": "850px"
+				}
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"AFDr_jneSp"
+			],
+			"linkedNodes": {}
+		},
+		"AFDr_jneSp": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "#f7f9fb",
+					"paddingLeft": "30px",
+					"paddingRight": "30px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"w4mI2I4Kld"
+			],
+			"linkedNodes": {}
+		},
+		"w4mI2I4Kld": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "AFDr_jneSp",
+			"hidden": false,
+			"nodes": [
+				"kXT_1QYfVU",
+				"XA-6BMbvrg"
+			],
+			"linkedNodes": {}
+		},
+		"kXT_1QYfVU": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"fontSize": "18px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "w4mI2I4Kld",
+			"hidden": false,
+			"nodes": [
+				"lOrdCSZVmZ"
+			],
+			"linkedNodes": {}
+		},
+		"XA-6BMbvrg": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "w4mI2I4Kld",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"lOrdCSZVmZ": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Your session has been closed",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#71c195"
+				},
+				"classNames": []
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "kXT_1QYfVU",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

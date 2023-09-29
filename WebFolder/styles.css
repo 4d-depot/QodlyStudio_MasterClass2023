@@ -1,0 +1,78 @@
+ .input {
+   border-color : #9ea7ba;
+  border-width : 1px;
+   border-radius : 15px;
+   width : 300px;
+   height : 40px;
+    font-family : "Poppins"; 
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.textInput {
+  display : flex;
+flex-direction : column;
+justify-content : flex-start;
+
+}
+
+.info {
+color: #9ea7ba;
+font-size: 14px;
+}
+
+.image {
+height : auto;
+width : 60px
+}
+
+.button {
+  background-color : #71c195;
+  width : 150px;
+  height:40px;
+  border-radius : 8px;
+  padding-top : 10px;
+  padding-bottom : 10px;
+  border-color : transparent;
+  color : #ffffff;
+  font-size: 16px;
+  font-weight : 600;
+}
+
+.form {
+width: 40%;
+height: 50%;
+}
+
+.mainBody {
+background: rgb(235,248,250);
+background: linear-gradient(108deg, rgba(235,248,250,1) 0%, rgba(250,239,251,1) 98%); 
+}
+
+.main {
+     font-family : "Poppins";    
+display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+}
+
+.card {
+margin-left: 100px;
+margin-top: 100px;
+padding-top: 50px;
+padding-bottom: 50px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+display : flex;
+flex-direction : column;
+align-items : center;
+justify-content : flex-start;
+gap : 30px;
+width : 80%;
+background-color: #ffffff;
+ border-radius : 15px;
+ }
+ 
+ .error {
+ color : red;
+ }

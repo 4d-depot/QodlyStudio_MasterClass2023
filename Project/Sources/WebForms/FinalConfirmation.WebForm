@@ -1,0 +1,800 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [
+					"greyBackground"
+				],
+				"events": [],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"aVpDHQMYPS"
+			],
+			"linkedNodes": {}
+		},
+		"aVpDHQMYPS": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "100%",
+					"backgroundColor": "#ffffffff",
+					"borderRadius": "20px",
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "12px",
+					"minWidth": "400px",
+					"height": "fit-content",
+					"minHeight": "fit-content",
+					"paddingTop": "20px",
+					"paddingRight": "20px",
+					"paddingBottom": "20px",
+					"paddingLeft": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"2k5o4eE3vY",
+				"lFQuf44bJN",
+				"zzbBKuykf1",
+				"X3BFyvTONb",
+				"6PtUI7I0A5",
+				"I5P4rvu7lK"
+			],
+			"linkedNodes": {}
+		},
+		"2k5o4eE3vY": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"justifyContent": "center",
+					"flexDirection": "column",
+					"alignItems": "center",
+					"width": "100%",
+					"minWidth": "100%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "aVpDHQMYPS",
+			"hidden": false,
+			"nodes": [
+				"i3df616-ce"
+			],
+			"linkedNodes": {}
+		},
+		"i3df616-ce": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "DEMO:newReservation.customer.fullname",
+								"children": [
+									{
+										"text": "Martin Niel",
+										"bold": true,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "DEMO:newReservation.customer.fullname"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "2k5o4eE3vY",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"lFQuf44bJN": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "20px",
+					"marginBottom": "20px",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "aVpDHQMYPS",
+			"hidden": false,
+			"nodes": [
+				"2OlZAM8Asq"
+			],
+			"linkedNodes": {}
+		},
+		"2OlZAM8Asq": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"flexDirection": "column",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "lFQuf44bJN",
+			"hidden": false,
+			"nodes": [
+				"cLnBMj5g97",
+				"cpwdCynIm9"
+			],
+			"linkedNodes": {}
+		},
+		"cLnBMj5g97": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "DEMO:newReservation.customer.reservations.length",
+								"children": [
+									{
+										"text": "23",
+										"bold": true,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "long",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "DEMO:newReservation.customer.reservations.length",
+				"style": {
+					"textAlign": "center",
+					"backgroundColor": "#71c195",
+					"color": "#1f4730",
+					"width": "60px",
+					"height": "60px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"fontSize": "26px",
+					"borderRadius": "50%"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "2OlZAM8Asq",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"cpwdCynIm9": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Number of reservations",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"textAlign": "center",
+					"fontSize": "14px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "2OlZAM8Asq",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"6PtUI7I0A5": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Summary",
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "aVpDHQMYPS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"I5P4rvu7lK": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "18px",
+					"marginBottom": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "aVpDHQMYPS",
+			"hidden": false,
+			"nodes": [
+				"mXpYv-7XGI",
+				"Cdi4BL3tih",
+				"C7e3-1by_4"
+			],
+			"linkedNodes": {}
+		},
+		"mXpYv-7XGI": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "10px",
+					"alignItems": "center",
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "I5P4rvu7lK",
+			"hidden": false,
+			"nodes": [
+				"jBysqtg4ZH",
+				"NGtbT9FrAX"
+			],
+			"linkedNodes": {}
+		},
+		"jBysqtg4ZH": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-flag-o",
+				"style": {
+					"width": "30px",
+					"height": "30px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"textAlign": "center",
+					"backgroundColor": "#f1fafe",
+					"color": "#79c7f4",
+					"borderRadius": "50%"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "mXpYv-7XGI",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"NGtbT9FrAX": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "DEMO:newReservation.departureAgency.name",
+								"children": [
+									{
+										"text": "dep ag",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "DEMO:newReservation.departureAgency.name"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "mXpYv-7XGI",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Cdi4BL3tih": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "10px",
+					"alignItems": "center",
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "I5P4rvu7lK",
+			"hidden": false,
+			"nodes": [
+				"gGPp43e9bl",
+				"WK431b3K9i"
+			],
+			"linkedNodes": {}
+		},
+		"gGPp43e9bl": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-flag-checkered",
+				"style": {
+					"width": "30px",
+					"height": "30px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"textAlign": "center",
+					"backgroundColor": "#f0fcf9",
+					"color": "#89e4cb",
+					"borderRadius": "50%"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "Cdi4BL3tih",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WK431b3K9i": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "DEMO:newReservation.arrivalAgency.name",
+								"children": [
+									{
+										"text": "arr ag",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "  "
+							}
+						]
+					}
+				],
+				"datasource": "DEMO:newReservation.arrivalAgency.name"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Cdi4BL3tih",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"C7e3-1by_4": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "10px",
+					"alignItems": "center",
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "I5P4rvu7lK",
+			"hidden": false,
+			"nodes": [
+				"WZozkGt8dF",
+				"4vFf4d-xOd"
+			],
+			"linkedNodes": {}
+		},
+		"WZozkGt8dF": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-car",
+				"style": {
+					"width": "30px",
+					"height": "30px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"textAlign": "center",
+					"backgroundColor": "#f5f7ff",
+					"color": "#a5aaf9",
+					"borderRadius": "50%"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "C7e3-1by_4",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"4vFf4d-xOd": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "DEMO:newReservation.car.abrandModel",
+								"children": [
+									{
+										"text": "brand model",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "DEMO:newReservation.car.abrandModel"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "C7e3-1by_4",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"X3BFyvTONb": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "center",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "aVpDHQMYPS",
+			"hidden": false,
+			"nodes": [
+				"fKaB863v7_",
+				"ENa7LLE3U-"
+			],
+			"linkedNodes": {}
+		},
+		"fKaB863v7_": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "80px",
+					"height": "80px",
+					"backgroundColor": "#fdf2ef",
+					"borderRadius": "50%",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "X3BFyvTONb",
+			"hidden": false,
+			"nodes": [
+				"7ucTq9yHfH"
+			],
+			"linkedNodes": {}
+		},
+		"7ucTq9yHfH": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"height": "40px",
+					"width": "40px"
+				},
+				"imgSrc": "https://raw.githubusercontent.com/4d/Web-studio-TIPS/gh-build/groups/study/assets/trophy.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "fKaB863v7_",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ENa7LLE3U-": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Congratulations your booking is confirmed",
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#ed7e54"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "X3BFyvTONb",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"zzbBKuykf1": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "# ",
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "DEMO:newReservation.ID",
+								"children": [
+									{
+										"bold": true,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "ID"
+									}
+								],
+								"dsType": "long",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "DEMO:newReservation.ID",
+				"style": {
+					"textAlign": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "aVpDHQMYPS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

@@ -1,0 +1,213 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "carmodels",
+				"type": "entitysel",
+				"dataclass": "CarModel",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [
+					"S2023_greyBackground"
+				],
+				"events": [],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"height": "100%"
+				}
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"7_oIOFQ9x1"
+			],
+			"linkedNodes": {}
+		},
+		"7_oIOFQ9x1": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"fisCrME0KW",
+				"L4dufZqZpC"
+			],
+			"linkedNodes": {}
+		},
+		"fisCrME0KW": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "7_oIOFQ9x1",
+			"hidden": false,
+			"nodes": [
+				"YU12Hl1kMn"
+			],
+			"linkedNodes": {}
+		},
+		"YU12Hl1kMn": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Car models",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {},
+				"classNames": [
+					"S2023_greenTitle"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "fisCrME0KW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"SPdoP_w09g": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"classNames": [
+					"S2023_whiteTile"
+				],
+				"style": {
+					"width": "60%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "L4dufZqZpC",
+			"hidden": false,
+			"nodes": [
+				"Qs6Z3zlhLB"
+			],
+			"linkedNodes": {}
+		},
+		"L4dufZqZpC": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "7_oIOFQ9x1",
+			"hidden": false,
+			"nodes": [
+				"SPdoP_w09g"
+			],
+			"linkedNodes": {}
+		},
+		"Qs6Z3zlhLB": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [
+					"S2023_greenSimpleDatatable"
+				],
+				"events": [],
+				"style": {
+					"height": "570px"
+				},
+				"headerHeight": 50,
+				"rowHeight": 40,
+				"datasource": "carmodels",
+				"columns": [
+					{
+						"title": "Brand",
+						"source": "brand",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"dataType": "string",
+						"id": "s62nCjTvPjYBHzKvTvd48k"
+					},
+					{
+						"title": "Model",
+						"source": "model",
+						"format": "",
+						"width": 150,
+						"sorting": false,
+						"dataType": "string",
+						"id": "mXFsB68RHToRqC3cYkWunp"
+					},
+					{
+						"title": "Buying price",
+						"source": "buyingPrice",
+						"format": "",
+						"width": "200px",
+						"sorting": false,
+						"dataType": "number",
+						"id": "5wECJ6TayvwbYVdycCGs1m"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "SPdoP_w09g",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

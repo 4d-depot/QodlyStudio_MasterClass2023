@@ -1,0 +1,68 @@
+{
+	"classes": [
+		{
+			"name": "S2023_greenSimpleDatatable",
+			"content": "self {\n\n}\n\nself .header .header-cell {\n  background-color: #71c195;\n  color: #1f4730;\n  font-weight: 600;\n   padding: 1.25rem 2rem;\n\t  text-align: center;\n\t \n}\n\nself .row .cell {\n\tcolor: black;\n  padding: 1.5rem 2rem;\n}\n\nself .row.selected {\nbackground-color: rgba(113,193,149,0.4);\n}\n\nself .header .resizable > :not([hidden]) ~ :not([hidden]),\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}",
+			"parentId": null,
+			"id": "V1e7mKruhfL_GUspUqgJo"
+		},
+		{
+			"id": "0xgfSNvpUdoD-He5IyO9J",
+			"name": "S2023_greenTitle",
+			"content": "self {\n\tcolor: #1f4730;\n  font-size : 22px;\n  font-weight : 500;\n}",
+			"parentId": null,
+			"children": {}
+		},
+		{
+			"name": "S2023_greenSubTitle",
+			"content": "self {\n\tcolor: #71c195;\n  font-size : 18px;\n  font-weight : 600;\n}",
+			"parentId": null,
+			"id": "yMviaWqeyT_KnuKDsKjnK"
+		},
+		{
+			"name": "S2023_greyBackground",
+			"content": "self {\n  background-color : #cccccc;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "AFDr_jneSp",
+			"id": "Ck8i5J3azx4530KBMS6qY"
+		},
+		{
+			"name": "S2023_whiteTile",
+			"content": "self {\n  background-color : #ffffffff;\n  border-radius : 15px;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "xXXbstd7G8",
+			"id": "pzuhAPh3b-X7-g43XE1e5"
+		},
+		{
+			"id": "f7Xellhcdt_Zine6jhgfG",
+			"name": "hideItem",
+			"content": "self {\n\nvisibility: hidden;\n\n}",
+			"parentId": null,
+			"children": {}
+		},
+		{
+			"name": "S2023_blackTextColor",
+			"content": "self {\ncolor: black;\n}",
+			"parentId": null,
+			"id": "GcOrDwxrhoVjQe561SlKh"
+		},
+		{
+			"name": "greyBackground",
+			"content": "self {\n  background-color : #cccccc;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "ROOT",
+			"id": "1f8R9eCrIAdr_wnGApcoZ"
+		},
+		{
+			"name": "whiteTile",
+			"content": "self {\n  background-color : #ffffffff;\n  border-radius : 15px;\n  display : flex;\n  flex-direction : column;\n  gap : 10px;\n}",
+			"children": {},
+			"parentId": null,
+			"origin": "m_diFwZRHL",
+			"id": "FeiLLbJFBLpUS1DrvS-ri"
+		}
+	]
+}

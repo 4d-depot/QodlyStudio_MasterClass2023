@@ -1,0 +1,581 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 1190,
+	"height": 750,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1190,
+					"height": 750,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#F7F9FB",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 70,
+					"left": 400,
+					"width": 420,
+					"height": 570,
+					"stroke": "transparent",
+					"borderRadius": 15
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 10,
+					"width": 380,
+					"height": 700,
+					"stroke": "transparent",
+					"borderRadius": 15
+				},
+				"managerPhoto1": {
+					"type": "input",
+					"top": 350,
+					"left": 910,
+					"width": 150,
+					"height": 150,
+					"dataSource": "Form:C1466.selectedTask.car.model.photo",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"class": "",
+					"pictureFormat": "proportionalCenter"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 230,
+					"left": 950,
+					"width": 300,
+					"height": 30,
+					"dataSource": "Form:C1466.selectedTask.price",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"fontSize": 16,
+					"fontFamily": "Poppins Medium",
+					"fontWeight": "normal"
+				},
+				"LB_tasks": {
+					"type": "listbox",
+					"left": 400,
+					"top": 80,
+					"width": 405,
+					"height": 560,
+					"events": [
+						"onSelectionChange"
+					],
+					"fill": "automatic",
+					"alternateFill": "automatic",
+					"rowHeight": "40px",
+					"headerHeight": "1em",
+					"showHeaders": false,
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.tasks",
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.selectedTask",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"stroke": "#000000",
+					"fontSize": 16,
+					"borderStyle": "none",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Poppins Medium",
+					"hideSystemHighlight": true,
+					"metaSource": "setColor",
+					"focusable": false,
+					"method": "ObjectMethods/LB_tasks.4dm",
+					"columns": [
+						{
+							"header": {
+								"text": "Employee",
+								"name": "Header5"
+							},
+							"name": "Column5",
+							"footer": {
+								"name": "Footer5"
+							},
+							"width": 180,
+							"dataSource": "This:C1470.employee.fullname"
+						},
+						{
+							"header": {
+								"text": "",
+								"name": "Header6"
+							},
+							"name": "Column6",
+							"footer": {
+								"name": "Footer6"
+							},
+							"width": 80,
+							"dataSource": "This:C1470.employee.photo",
+							"fontFamily": "roboto",
+							"fontSize": 12,
+							"dataSourceTypeHint": "picture",
+							"pictureFormat": "proportionalCenter",
+							"verticalPadding": 5
+						},
+						{
+							"header": {
+								"name": "Header4",
+								"text": "Time"
+							},
+							"name": "Column4",
+							"footer": {
+								"name": "Footer4"
+							},
+							"dataSource": "This:C1470.todayTaskTime",
+							"width": 60,
+							"dataSourceTypeHint": "time",
+							"timeFormat": "hh_mm"
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "Time"
+							},
+							"name": "Column3",
+							"footer": {
+								"name": "Footer3"
+							},
+							"dataSource": "This:C1470.todayTaskType",
+							"width": 70,
+							"textAlign": "center"
+						}
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"text": "Booking #",
+					"top": 80,
+					"left": 840,
+					"width": 100,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "right"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Employee",
+					"top": 30,
+					"left": 410,
+					"width": 200,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Time",
+					"top": 30,
+					"left": 670,
+					"width": 100,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 80,
+					"left": 950,
+					"width": 120,
+					"height": 30,
+					"dataSource": "Form:C1466.selectedTask.ID",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"fontSize": 16,
+					"fontFamily": "Poppins Medium",
+					"fontWeight": "normal"
+				},
+				"Text9": {
+					"type": "text",
+					"text": "From",
+					"top": 130,
+					"left": 850,
+					"width": 80,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "right"
+				},
+				"Text10": {
+					"type": "text",
+					"text": "To",
+					"top": 180,
+					"left": 850,
+					"width": 80,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "right"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 130,
+					"left": 950,
+					"width": 100,
+					"height": 30,
+					"dataSource": "Form:C1466.selectedTask.departureDate",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"fontSize": 16,
+					"fontFamily": "Poppins Medium",
+					"fontWeight": "normal",
+					"dataSourceTypeHint": "date"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 180,
+					"left": 950,
+					"width": 100,
+					"height": 30,
+					"dataSource": "Form:C1466.selectedTask.arrivalDate",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"fontSize": 16,
+					"fontFamily": "Poppins Medium",
+					"fontWeight": "normal",
+					"dataSourceTypeHint": "date"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "Customer",
+					"top": 280,
+					"left": 840,
+					"width": 100,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "right"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 280,
+					"left": 950,
+					"width": 250,
+					"height": 30,
+					"dataSource": "Form:C1466.selectedTask.customer.fullname",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"fontSize": 16,
+					"fontFamily": "Poppins Medium",
+					"fontWeight": "normal"
+				},
+				"Text12": {
+					"type": "text",
+					"text": "Booked vehicle",
+					"top": 330,
+					"left": 910,
+					"width": 150,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "center"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 480,
+					"left": 850,
+					"width": 300,
+					"height": 30,
+					"dataSource": "Form:C1466.selectedTask.car.abrandModel",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"fontSize": 16,
+					"fontFamily": "Poppins Medium",
+					"fontWeight": "normal"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Cancel booking",
+					"top": 700,
+					"left": 890,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "none",
+					"fontFamily": "Poppins SemiBold",
+					"fontSize": 16,
+					"stroke": "#71C195",
+					"method": "ObjectMethods/Button1.4dm",
+					"style": "regular",
+					"focusable": false
+				},
+				"AlternativesTitle": {
+					"type": "text",
+					"text": "Alternatives vehicles",
+					"top": 540,
+					"left": 840,
+					"width": 515,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "left"
+				},
+				"Text14": {
+					"type": "text",
+					"text": "Type",
+					"top": 30,
+					"left": 750,
+					"width": 100,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold"
+				},
+				"Line": {
+					"type": "line",
+					"top": 60,
+					"left": 410,
+					"width": 390,
+					"height": 0,
+					"strokeWidth": 1,
+					"stroke": "#4E4D71"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Price (€)",
+					"top": 230,
+					"left": 840,
+					"width": 100,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontSize": 18,
+					"fontWeight": "normal",
+					"fontFamily": "Poppins SemiBold",
+					"textAlign": "right"
+				},
+				"LB_alternatives": {
+					"type": "listbox",
+					"left": 840,
+					"top": 570,
+					"width": 300,
+					"height": 120,
+					"events": [],
+					"fill": "#FFFFFF",
+					"alternateFill": "automatic",
+					"rowHeight": "30px",
+					"headerHeight": "1em",
+					"showHeaders": false,
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.selectedTask.alternatives",
+					"selectionMode": "none",
+					"currentItemSource": "",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"stroke": "#000000",
+					"fontSize": 16,
+					"borderStyle": "none",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Poppins Medium",
+					"hideSystemHighlight": false,
+					"metaSource": "",
+					"columns": [
+						{
+							"header": {
+								"text": "Employee",
+								"name": "Header2"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"width": 300,
+							"dataSource": "This:C1470.afullBrandModel"
+						}
+					]
+				},
+				"LB_agenciesTasks": {
+					"type": "listbox",
+					"left": 20,
+					"top": 100,
+					"width": 350,
+					"height": 560,
+					"events": [
+						"onSelectionChange"
+					],
+					"fill": "automatic",
+					"alternateFill": "automatic",
+					"rowHeight": "40px",
+					"headerHeight": "17px",
+					"showHeaders": false,
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.agencies",
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.selectedAgency",
+					"scrollbarHorizontal": "hidden",
+					"focusable": false,
+					"metaSource": "setColor",
+					"hideSystemHighlight": true,
+					"borderStyle": "none",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"scrollbarVertical": "hidden",
+					"stroke": "#000000",
+					"fontFamily": "Poppins Medium",
+					"fontSize": 16,
+					"method": "ObjectMethods/LB_agenciesTasks.4dm",
+					"verticalAlign": "middle",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header7"
+							},
+							"name": "Column7",
+							"footer": {
+								"name": "Footer7"
+							},
+							"width": 350,
+							"dataSource": "This:C1470.name",
+							"enterable": false,
+							"rowFillSource": ""
+						}
+					]
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 20,
+					"width": 280,
+					"height": 40,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "#c0c0c0",
+					"class": "",
+					"borderRadius": 50
+				},
+				"Search": {
+					"type": "input",
+					"left": 40,
+					"top": 50,
+					"width": 300,
+					"height": 30,
+					"dataSource": "Form:C1466.search",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"method": "ObjectMethods/Search.4dm",
+					"hideFocusRing": true,
+					"fontFamily": "Poppins Medium",
+					"fontSize": 16,
+					"stroke": "#000000",
+					"textAlign": "left"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Mask": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"geometryStamp": 4218,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

@@ -1,0 +1,130 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 600,
+	"height": 250,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 600,
+					"height": 250,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#F7F9FB",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"text": "Confirm cancellation of booking",
+					"top": 40,
+					"left": 0,
+					"width": 600,
+					"height": 30,
+					"stroke": "#71C195",
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"fontFamily": "Poppins Light",
+					"textAlign": "center"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 0,
+					"top": 80,
+					"width": 600,
+					"height": 30,
+					"dataSource": "\"# \"+String:C10(Form:C1466.task.ID)",
+					"fontFamily": "Poppins Light",
+					"fontSize": 18,
+					"stroke": "#71C195",
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "OK",
+					"top": 150,
+					"left": 305,
+					"width": 100,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "none",
+					"fontFamily": "Poppins Regular",
+					"fontSize": 16,
+					"stroke": "#71C195",
+					"method": "ObjectMethods/Button1.4dm",
+					"style": "regular",
+					"action": "accept",
+					"focusable": false
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Cancel",
+					"top": 150,
+					"left": 195,
+					"width": 100,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "none",
+					"fontFamily": "Poppins Regular",
+					"fontSize": 16,
+					"stroke": "#71C195",
+					"method": "ObjectMethods/Button2.4dm",
+					"style": "regular",
+					"action": "cancel",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Mask": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"geometryStamp": 1712,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

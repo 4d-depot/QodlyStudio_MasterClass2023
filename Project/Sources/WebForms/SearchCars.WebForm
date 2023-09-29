@@ -1,0 +1,860 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "foundCars",
+				"type": "entitysel",
+				"dataclass": "Car",
+				"namespace": "",
+				"initialValue": "",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "categories",
+				"type": "entitysel",
+				"dataclass": "CategoryCar",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [
+					"greyBackground"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Car",
+						"events": [
+							"onload"
+						],
+						"id": "61CxdUDK8QLJE75vYAtJbr",
+						"method": "ds.Car.searchAvailableCars",
+						"params": [
+							{
+								"name": "reservation",
+								"type": "cs.ReservationEntity",
+								"datasource": "DEMO:newReservation",
+								"id": "iSU8brfLh1UmyfzoieuuGG"
+							},
+							{
+								"name": "gearbox",
+								"type": "Text",
+								"datasource": "All",
+								"id": "qdQeWT2wnP23xjK9pJbtep",
+								"isHardCoded": true,
+								"hardCodedValue": "All"
+							}
+						],
+						"returns": {
+							"name": "$0",
+							"type": "Variable",
+							"datasource": "foundCars"
+						}
+					}
+				],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"LC1lJ0q1S7",
+				"ZSn4jAGz0A"
+			],
+			"linkedNodes": {}
+		},
+		"LC1lJ0q1S7": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"classNames": [
+					"whiteTile"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"wfSpLL580J",
+				"4iWyUE0zIn"
+			],
+			"linkedNodes": {}
+		},
+		"wfSpLL580J": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "center",
+					"gap": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "LC1lJ0q1S7",
+			"hidden": false,
+			"nodes": [
+				"kWxP-WTJUk",
+				"mSKfMiq5gc"
+			],
+			"linkedNodes": {}
+		},
+		"kWxP-WTJUk": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "left"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "wfSpLL580J",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "G7b2iFPZop",
+				"input": "ZgGEiO9wGQ"
+			}
+		},
+		"G7b2iFPZop": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Departure date",
+				"style": {
+					"width": "250px"
+				},
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "kWxP-WTJUk",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ZgGEiO9wGQ": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "date",
+				"datasource": "DEMO:newReservation.departureDate",
+				"format": "dd/MM/yyyy",
+				"dataType": "date",
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "kWxP-WTJUk",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"mSKfMiq5gc": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "left"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "wfSpLL580J",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "sETJswHyus",
+				"input": "p4owzF12ZV"
+			}
+		},
+		"sETJswHyus": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Arrival date",
+				"style": {
+					"width": "150px"
+				},
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "mSKfMiq5gc",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"p4owzF12ZV": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "date",
+				"datasource": "DEMO:newReservation.arrivalDate",
+				"format": "dd/MM/yyyy",
+				"dataType": "date",
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "mSKfMiq5gc",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"4iWyUE0zIn": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "LC1lJ0q1S7",
+			"hidden": false,
+			"nodes": [
+				"Mn2s1DCq8F",
+				"GT8xeg3Cf2"
+			],
+			"linkedNodes": {}
+		},
+		"Mn2s1DCq8F": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Category",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"width": "20%"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "4iWyUE0zIn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"GT8xeg3Cf2": {
+			"type": {
+				"resolvedName": "SelectBox"
+			},
+			"isCanvas": false,
+			"props": {
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"template": "{{ length }} items",
+				"rowsNumber": 5,
+				"style": {
+					"width": "50%"
+				},
+				"datasource": "categories",
+				"currentElement": "DEMO:newReservation.categoryCar"
+			},
+			"displayName": "Select Box",
+			"custom": {},
+			"parent": "4iWyUE0zIn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"container": "02svJ3zP1m"
+			}
+		},
+		"ZSn4jAGz0A": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"dU4bB-0g0X",
+				"rZQ46uTb5P",
+				"zhB7VeSlNU"
+			],
+			"linkedNodes": {}
+		},
+		"zhB7VeSlNU": {
+			"type": {
+				"resolvedName": "Matrix"
+			},
+			"isCanvas": false,
+			"props": {
+				"orientation": "vertical",
+				"iterable": true,
+				"classNames": [],
+				"events": [],
+				"style": {
+					"height": "660px"
+				},
+				"datasource": "foundCars",
+				"gridProps": {
+					"styleboxWidth": 229,
+					"styleboxHeight": 220,
+					"enableMosaic": true,
+					"enableFlex": true,
+					"flexProps": {
+						"nbOfRows": 3,
+						"nbOfColumns": 4
+					}
+				},
+				"currentElement": "DEMO:newReservation.car"
+			},
+			"displayName": "Matrix",
+			"custom": {},
+			"parent": "ZSn4jAGz0A",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"container": "_GXGV4STrV"
+			}
+		},
+		"_GXGV4STrV": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"minHeight": "40px",
+					"display": "flex",
+					"alignItems": "center",
+					"width": "25%",
+					"height": "220px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"contentWidth": 228,
+				"contentHeight": 220
+			},
+			"parent": "zhB7VeSlNU",
+			"hidden": false,
+			"nodes": [
+				"NRx10PsFBD"
+			],
+			"linkedNodes": {}
+		},
+		"02svJ3zP1m": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "fd-selectbox__container",
+				"isFixedWidth": true,
+				"style": {
+					"minHeight": 40
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"contentWidth": 408,
+				"contentHeight": 47
+			},
+			"parent": "GT8xeg3Cf2",
+			"hidden": false,
+			"nodes": [
+				"VBM0F8dXSM"
+			],
+			"linkedNodes": {}
+		},
+		"VBM0F8dXSM": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"id": "text",
+				"datasource": "$This.label",
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "datasource",
+								"dsType": "string",
+								"datasource": "$This.label",
+								"children": [
+									{
+										"text": "$This.label"
+									}
+								]
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "02svJ3zP1m",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"NRx10PsFBD": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "#ffffffff",
+					"borderRadius": "15px",
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"height": "190px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "_GXGV4STrV",
+			"hidden": false,
+			"nodes": [
+				"JHg388GUKT",
+				"F1VkGIMA0l",
+				"dOV0J8th1o"
+			],
+			"linkedNodes": {}
+		},
+		"JHg388GUKT": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"id": "text",
+				"datasource": "$This.abrandModel",
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"type": "datasource",
+								"dsType": "string",
+								"datasource": "$This.abrandModel",
+								"children": [
+									{
+										"text": "$This.abrandModel"
+									}
+								]
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"style": {
+					"textAlign": "center",
+					"width": "140px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "NRx10PsFBD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"dU4bB-0g0X": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "center",
+					"justifyContent": "flex-end"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ZSn4jAGz0A",
+			"hidden": false,
+			"nodes": [
+				"s9_2Slcehs"
+			],
+			"linkedNodes": {}
+		},
+		"s9_2Slcehs": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Search",
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Car",
+						"events": [
+							"onclick"
+						],
+						"id": "1zScfzAeSStUFDyUb7ZbPc",
+						"method": "ds.Car.searchAvailableCars",
+						"params": [
+							{
+								"name": "reservation",
+								"type": "cs.ReservationEntity",
+								"datasource": "DEMO:newReservation",
+								"id": "nsA9SH3Go1eNduWf8dLdvB"
+							},
+							{
+								"name": "gearbox",
+								"type": "Text",
+								"datasource": "All",
+								"id": "jJBKzixgHEh6Bmr5ep87At",
+								"isHardCoded": true,
+								"hardCodedValue": "All"
+							}
+						],
+						"returns": {
+							"name": "$0",
+							"type": "Variable",
+							"datasource": "foundCars"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "inline",
+					"backgroundColor": "#6fc295",
+					"width": "120px",
+					"height": "36px",
+					"boxShadow": "0px 6px 19px -3px transparent"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "dU4bB-0g0X",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "DMEuaRnU4V"
+			}
+		},
+		"DMEuaRnU4V": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "s9_2Slcehs",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"F1VkGIMA0l": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"height": "70px",
+					"width": "70px",
+					"borderRadius": "50%"
+				},
+				"datasource": "$This.model.photo"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "NRx10PsFBD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"dOV0J8th1o": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "$This.model.dailyRentalPrice",
+								"children": [
+									{
+										"text": "price",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "number",
+								"format": "0 €"
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "$This.model.dailyRentalPrice"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "NRx10PsFBD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"rZQ46uTb5P": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "center",
+					"justifyContent": "flex-end"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ZSn4jAGz0A",
+			"hidden": false,
+			"nodes": [
+				"lI53cmUPAy"
+			],
+			"linkedNodes": {}
+		},
+		"lI53cmUPAy": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "ReservationEntity",
+						"events": [
+							"onclick"
+						],
+						"id": "oDBVTEVCQh6CrPqBk6Pfx1",
+						"method": "newReservation.confirmBooking",
+						"params": [],
+						"namespace": "DEMO",
+						"returns": {
+							"name": "$0",
+							"type": "Variable"
+						}
+					},
+					{
+						"type": "navigation",
+						"id": "gjxk5rjYPa1Ug7ksreVpUP",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "",
+						"parent": "webform-loader-self",
+						"target": "FinalConfirmation"
+					},
+					{
+						"type": "method",
+						"dataclass": "Utilities",
+						"events": [
+							"onclick"
+						],
+						"id": "nWsw6oGc3RoKF5SJxuAqyB",
+						"method": "ds.Utilities.applyCSS",
+						"params": [
+							{
+								"name": "item",
+								"type": "Text",
+								"datasource": "recap",
+								"id": "bWmjBvQMa5GcANFeoj9WoX",
+								"isHardCoded": true,
+								"hardCodedValue": "recap"
+							},
+							{
+								"name": "cssClass",
+								"type": "Text",
+								"datasource": "hideItem",
+								"id": "oju2GEXNicuufi6ZAFLqJ9",
+								"isHardCoded": true,
+								"hardCodedValue": "hideItem"
+							}
+						],
+						"returns": {
+							"name": "$0",
+							"type": "Variable"
+						}
+					}
+				],
+				"style": {
+					"backgroundColor": "#ed7e54",
+					"borderRadius": "10px",
+					"paddingTop": "2px",
+					"paddingBottom": "2px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "rZQ46uTb5P",
+			"hidden": false,
+			"nodes": [
+				"gpGWKe7WJi"
+			],
+			"linkedNodes": {}
+		},
+		"gpGWKe7WJi": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Book",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#ffffffff",
+					"fontSize": "20px",
+					"textAlign": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "lI53cmUPAy",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

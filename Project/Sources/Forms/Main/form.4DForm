@@ -1,0 +1,116 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1190,
+					"height": 820,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#F7F9FB",
+					"stroke": "transparent"
+				},
+				"Tab Control": {
+					"type": "tab",
+					"top": 754,
+					"left": 0,
+					"width": 1298,
+					"height": 40,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "objTabs",
+					"dataSourceTypeHint": "object",
+					"action": "",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tab Control.4dm"
+				},
+				"MenuAgencies": {
+					"type": "button",
+					"text": "Agencies list",
+					"top": 20,
+					"left": 395,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "none",
+					"fontFamily": "Poppins Light",
+					"fontSize": 16,
+					"stroke": "#71C195",
+					"method": "ObjectMethods/MenuAgencies.4dm",
+					"style": "regular",
+					"focusable": false
+				},
+				"MenuTodayTasks": {
+					"type": "button",
+					"text": "Today tasks",
+					"top": 20,
+					"left": 595,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "none",
+					"fontFamily": "Poppins Light",
+					"fontSize": 16,
+					"stroke": "#71C195",
+					"method": "ObjectMethods/MenuTodayTasks.4dm",
+					"style": "regular",
+					"focusable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"pageContent": {
+					"type": "subform",
+					"left": 0,
+					"top": 60,
+					"width": 1190,
+					"height": 750,
+					"detailForm": "",
+					"borderStyle": "none",
+					"events": [
+						"onLoad"
+					],
+					"dataSource": "Form:C1466.pageContentObj",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"geometryStamp": 292,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 1190,
+	"height": 820
+}

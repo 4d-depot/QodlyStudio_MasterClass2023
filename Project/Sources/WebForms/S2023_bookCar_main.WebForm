@@ -1,0 +1,234 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [
+					"S2023_greyBackground"
+				],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Reservation",
+						"events": [
+							"onload"
+						],
+						"id": "varnvWQastRcMGf29BK3Hf",
+						"method": "ds.Reservation.getNewBooking",
+						"params": [],
+						"returns": {
+							"name": "$0",
+							"type": "Variable",
+							"datasource": "S2023:currentReservation"
+						}
+					},
+					{
+						"type": "method",
+						"dataclass": "Utilities",
+						"events": [
+							"onload"
+						],
+						"id": "mr3wbPLPcA7AjHy51XLS2p",
+						"method": "ds.Utilities.applyCSS",
+						"params": [
+							{
+								"name": "item",
+								"type": "Text",
+								"datasource": "recapDate",
+								"id": "a4MwtuGbThAhu2awn88BFV",
+								"isHardCoded": true,
+								"hardCodedValue": "recapDate"
+							},
+							{
+								"name": "cssClass",
+								"type": "Text",
+								"datasource": "hideItem",
+								"id": "fcedWtigUnib5mSMFYM9op",
+								"isHardCoded": true,
+								"hardCodedValue": "hideItem"
+							}
+						],
+						"returns": {
+							"name": "$0",
+							"type": "Variable"
+						}
+					}
+				],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"height": "100%",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"AFDr_jneSp"
+			],
+			"linkedNodes": {}
+		},
+		"AFDr_jneSp": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"paddingLeft": "12px",
+					"paddingRight": "12px",
+					"paddingBottom": "12px",
+					"paddingTop": "12px"
+				},
+				"classNames": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"kXT_1QYfVU",
+				"T9HGjwk-UM"
+			],
+			"linkedNodes": {}
+		},
+		"T9HGjwk-UM": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"height": "auto",
+					"gap": "5px",
+					"flexDirection": "row",
+					"justifyContent": "flex-start",
+					"alignItems": "start",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "AFDr_jneSp",
+			"hidden": false,
+			"nodes": [
+				"pZn8_vzOIW",
+				"U3Qm2R91oH"
+			],
+			"linkedNodes": {}
+		},
+		"U3Qm2R91oH": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"paddingTop": "8px",
+					"width": "40%",
+					"marginTop": "0px",
+					"height": "100%"
+				},
+				"webform": "S2023_bookCar_recap",
+				"serverSideRef": "recap"
+			},
+			"displayName": "Webform Loader",
+			"custom": {},
+			"parent": "T9HGjwk-UM",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"pZn8_vzOIW": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"webform": "S2023_bookCar_customer",
+				"style": {
+					"width": "60%",
+					"height": "100%"
+				}
+			},
+			"displayName": "Webform Loader",
+			"custom": {},
+			"parent": "T9HGjwk-UM",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"3x7jKdzSHf": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Book a car",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {},
+				"classNames": [
+					"S2023_greenTitle"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "kXT_1QYfVU",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"kXT_1QYfVU": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"fontSize": "18px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "AFDr_jneSp",
+			"hidden": false,
+			"nodes": [
+				"3x7jKdzSHf"
+			],
+			"linkedNodes": {}
+		}
+	}
+}

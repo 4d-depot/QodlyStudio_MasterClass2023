@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="42">
+	<com.4d>
+		<database>
+			<cache adaptative="false" flush_buffer_delay="20s" size_fixed="3000"/>
+			<misc prefer_null_than_blank_values="true"/>
+		</database>
+		<web>
+			<standalone_server>
+				<configuration publish_at_startup="true">
+					<hosts>
+						<host id="0" name="default"/>
+					</hosts>
+				</configuration>
+				<qodlystudio enabled="true"/>
+				<rest launch_at_startup="true"/>
+				<log format="0" tokens=""/>
+				<webstudio enabled="true"/>
+			</standalone_server>
+		</web>
+		<php ip_address="127.0.0.1"/>
+		<server>
+			<network>
+				<options publication_name="carRenting" use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<general startup_environnement="0"/>
+		<compiler>
+			<options compilation_path="3"/>
+		</compiler>
+	</com.4d>
+</preferences>

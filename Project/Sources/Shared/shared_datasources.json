@@ -1,0 +1,49 @@
+{
+	"S2023": [
+		{
+			"id": "sharedAgency",
+			"type": "entity",
+			"dataclass": "Agency",
+			"namespace": "S2023",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "reservations",
+			"type": "entitysel",
+			"dataclass": "Reservation",
+			"from": "sharedAgency.todayBookings",
+			"namespace": "S2023",
+			"initialValue": "",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "aReservation",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"from": "reservations",
+			"namespace": "S2023",
+			"initialValue": "first",
+			"depth": null
+		},
+		{
+			"id": "currentReservation",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"namespace": "S2023",
+			"initialValue": "",
+			"depth": null
+		}
+	],
+	"DEMO": [
+		{
+			"id": "newReservation",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"namespace": "DEMO",
+			"initialValue": "",
+			"depth": null
+		}
+	]
+}

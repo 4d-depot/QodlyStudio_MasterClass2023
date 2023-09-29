@@ -1,0 +1,67 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Barre #1",
+			"items": [
+				{
+					"link": 32001
+				},
+				{
+					"link": 32002
+				},
+				{
+					"link": 32003
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 32001,
+			"title": "Quitter",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemQuit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 32002,
+			"title": "Agencies",
+			"items": [
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": "List",
+					"method": "displayAgencies",
+					"shortcutAccel": true,
+					"shortcutKey": "X"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 32003,
+			"title": ":xliff:CommonMenuMode",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemDesign",
+					"action": "design"
+				}
+			]
+		}
+	]
+}
